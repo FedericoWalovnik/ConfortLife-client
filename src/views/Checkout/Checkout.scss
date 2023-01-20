@@ -1,0 +1,65 @@
+@import '../../variables';
+
+.Checkout {
+    margin: 3vh 18vw;
+    min-height: 55vh;
+
+    &__info {
+        margin-top: 2rem;
+        display: flex;
+        width: 100%;
+    }
+
+    &__form {
+        display: flex;
+        width: 50%;
+    }
+
+    &__summary {
+        display: flex;
+        width: 50%;
+    }
+
+    &__error {
+        font-size: 1.4rem;
+    }
+
+    &__pay-buttons {
+        display: flex;
+        justify-content: end;
+        
+        & button{
+            font-size: 1.4rem;
+            border: 0 solid #000;
+            color: #FFF;
+            display: flex;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 180px;
+            background-color: black;
+        }
+    }
+
+    &__pay-button {
+        display: flex;
+        justify-content: end;
+        font-size: 1.4rem;
+
+        &-2 {
+            background-color: red !important;
+        }
+
+        & button{
+            cursor: pointer;
+            display: flex;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            width: 180px;
+            background-color: black;
+        }
+    }
+}

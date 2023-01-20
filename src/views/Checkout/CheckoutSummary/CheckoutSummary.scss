@@ -1,0 +1,46 @@
+@import '../../../variables.scss';
+
+.CheckoutSummary {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    font-size: 1.4rem;
+
+    &__products {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    &__product {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+        border-top: 1px solid $grey-borders;
+        padding-top: 1rem;
+
+        &-name {
+            font-size: 1.2rem;
+            font-weight: normal;
+            flex-basis: 70%;
+        }
+
+        &-price {
+            font-weight: bold;
+        }
+    }
+
+    &__totalPrice {
+        margin-top: 1rem;
+        display: flex;
+        font-weight: bold;
+        border: 1px solid $grey-borders;
+        justify-content: space-between;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    &__shipping {
+        margin-top: 2rem;
+    }
+}

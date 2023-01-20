@@ -1,0 +1,24 @@
+.ItemCount {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+
+    &__to-cart{
+        width: 100%;
+        box-shadow: none !important;
+    }
+
+    &__counter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Mui-disabled {
+        background-color: rgb(151, 151, 151) !important;
+    }
+}

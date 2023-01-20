@@ -1,0 +1,76 @@
+@import '../../variables';
+
+.navbar {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: $color-primary;
+    color: #fff;
+    height: 7rem;
+    padding: 0 $side-margin;
+    align-items: center;
+
+    &__logo a{
+        font-size: 2.4rem;
+        cursor: pointer;
+        text-decoration: none !important;
+        color: #fff;
+    }
+    
+    &__categories {
+        padding: 0 !important;
+        margin: 0 !important;
+        display: flex;
+        list-style: none;
+        height: 100%;
+        justify-items: center;
+    }
+
+    &__category {
+        display: flex;
+        align-items: center;
+        padding: 0 1.2rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+        font-weight: 500;
+        border-bottom: 2px solid $color-primary;
+        text-decoration: none !important;
+        color: #fff;
+
+        &:hover, &:focus{
+            outline: none !important;
+            border-bottom: 2px solid #fff;
+        }
+
+        &--active p{
+            color: red;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.1rem;
+        margin-left: 1rem;
+        border-radius: 100%;
+        height: 42px;
+        width: 42px;
+        padding: .4rem;
+        cursor: pointer;
+        
+        &:hover, &:focus {
+            outline: none !important;
+            background-color: rgb(139, 139, 139);
+        }
+
+        & a {
+            color: #fff;
+        }
+    }
+}

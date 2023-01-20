@@ -1,0 +1,24 @@
+.CheckoutForm {
+    display: flex;
+    flex: 1 1 0;
+
+    &__billing {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-right: 4rem;
+    }
+
+
+    &__flex {
+        display: flex;
+
+        & div:first-child {
+            margin-right: 1rem;
+        }
+    }
+
+    &__direction {
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,141 @@
+@import '../../variables.scss';
+
+.Home {
+    margin: 3vh $side-margin;
+
+    &__wpp-button {
+        position: fixed;
+        bottom: 30px;
+        right: $side-margin;
+        z-index: 100;
+        background-color: #25D366;
+        border-radius: 100%;
+        
+
+        img {
+            margin: 1.4rem;
+            height: 48px;
+            width: 48px;
+            fill: #FFF;
+        }
+    }
+
+    &__section {
+        margin-bottom: 6rem;
+    }
+
+    &__cards {
+        display: flex;
+    }
+
+    & .SimpleCard:first-child {
+        margin-right: 1rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    &__testimonials {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+        &-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            width: 30%;
+        }
+    }
+
+    &__who-are-we {
+        display: flex;
+        margin-bottom: 3rem;
+        justify-content: center;
+    }
+
+    &__text {
+        z-index: 2;
+        display: flex;
+        flex-shrink: 0;
+        flex-direction: column;
+        align-self: center;
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 10px;
+        flex-basis: 45%;
+
+        & h2 {
+            font-size: 2rem;
+        }
+
+        & p {
+            font-size: 1.4rem;
+            margin: 1.4rem 0;
+        }
+
+        & button {
+            align-self: flex-end;
+            color: #fff;
+            border: 0 solid $color-primary;
+            height: 45px;
+            border-radius: 5px;
+            width: 25%;
+            background-color: $color-primary;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-primary-shadow;
+            }
+        }
+    }
+
+    &__image {
+        background-color: grey;
+        border-radius: 10px;
+        height: 300px;
+        flex-basis: 100%;
+        margin-left: -50px;
+        flex-basis: 40%;
+    }
+
+    &__testimonials-cards-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        align-items: self-start;
+    }
+
+    &__testimonial-card {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 32%;
+        background-color: #FFF;
+        padding: 2rem;
+        border-radius: 10px;
+        font-size: 1.4rem;
+    }
+
+    &__testimonial {
+        &-icon {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            font-size: 6rem;
+            line-height: 0.5;
+            margin-top: 1rem;
+        }
+
+        &-author {
+            margin-top: 2rem;
+            text-align: end;
+        }
+    }
+}
