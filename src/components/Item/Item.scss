@@ -3,9 +3,15 @@
 .Item {
   cursor: pointer;
 
-  &__image {
+  &__image-container {
+    height: 300px;
     width: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow-y: hidden;
+  }
 
+  &__image {
     &-loading {
       height: 30rem !important;
       margin-bottom: 1rem;

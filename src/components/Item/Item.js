@@ -9,11 +9,18 @@ const Item = ({ item, loading }) => {
     <div className="Item">
       {!loading ? (
         <span>
-          <img
-            className="Item__image"
-            src={item.image}
-            alt={item.title}
-          />
+          <div
+            className="Item__image-container"
+            style={{
+              backgroundImage: `url(${item.image})`
+            }}
+          >
+            {/* <img
+              className="Item__image"
+              src={item.image}
+              alt={item.title}
+            /> */}
+          </div>
           <div className="Item__info">
             <p className="Item__title">{item.title}</p>
             <p className="Item__extra">

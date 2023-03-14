@@ -29,7 +29,7 @@ const Navbar = () => {
           </li>
         </Link>
         <Link
-          to={'/category/Colchones'}
+          to={'/category/PillowTop'}
           className="navbar__category"
         >
           <li tabIndex="0">
@@ -37,7 +37,7 @@ const Navbar = () => {
           </li>
         </Link>
         <Link
-          to={'/category/Colchones'}
+          to={'/category/AlmohadonesOrtopedicos'}
           className="navbar__category"
         >
           <li tabIndex="0">
@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
         </Link>
         <Link
-          to={'/category/Colchones'}
+          to={'/category/Almohadas'}
           className="navbar__category"
         >
           <li tabIndex="0">
@@ -53,7 +53,7 @@ const Navbar = () => {
           </li>
         </Link>
         <Link
-          to={'/category/Colchones'}
+          to={'/category/Mascotas'}
           className="navbar__category"
         >
           <li tabIndex="0">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </li>
         </Link>
         <Link
-          to={'/category/Colchones'}
+          to={'/category/Confort'}
           className="navbar__category"
         >
           <li tabIndex="0">

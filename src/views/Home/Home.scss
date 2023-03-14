@@ -20,11 +20,12 @@
   }
 
   &__section {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
 
   &__cards {
     display: flex;
+    margin-bottom: 3rem;
   }
 
   & .SimpleCard:first-child {
@@ -34,11 +35,16 @@
   &__title {
     font-size: 2rem;
     font-weight: 500;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
-  &__item:not(:last-child) {
-    margin-right: 1rem;
+  &__item {
+    flex-grow: 1;
+    flex-basis: 50%;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
   }
 
   &__testimonials {
@@ -57,7 +63,7 @@
 
   &__who-are-we {
     display: flex;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
     justify-content: center;
   }
 

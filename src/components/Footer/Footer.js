@@ -1,47 +1,42 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faInstagram,
+  faSquareFacebook
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 
 import './Footer.scss'
 
 const Footer = () => {
-    return (
-        <div className="Footer">
-            <div className="Footer__links">
-                <ul>
-                    <li className="Footer__title">GIFT CARDS</li>
-                    <li className="Footer__title">PROMOTIONS</li>
-                    <li className="Footer__title">FIND A STORE</li>
-                    <li className="Footer__title">SIGN UP FOR EMAIL</li>
-                    <li className="Footer__title">BECOME A MEMBER</li>
-                    <li className="Footer__title">NIKE JOURNAL</li>
-                    <li className="Footer__title">SEND US FEEDBACK</li>
-                </ul>
-            </div>
-            <div className="Footer__links">
-                <p className="Footer__title">GET HELP</p>
-                <ul>
-                    <li className="Footer__item">Order Status</li>
-                    <li className="Footer__item">Shipping and Delivery</li>
-                    <li className="Footer__item">Returns</li>
-                    <li className="Footer__item">Payment Options</li>
-                    <li className="Footer__item">Gift Card Balance</li>
-                    <li className="Footer__item">Contact Us</li>
-                </ul>
-            </div>
-            <div className="Footer__links">
-                <p className="Footer__title">ABOUT NIKE</p>
-                <ul>
-                    <li className="Footer__item">News</li>
-                    <li className="Footer__item">Careers</li>
-                    <li className="Footer__item">Investors</li>
-                    <li className="Footer__item">Porpuose</li>
-                    <li className="Footer__item">Sustentability</li>
-                </ul>
-            </div>
-            <div className="Footer__copyright">
-                <p>Federico Walovnik. Buenos Aires, Argentina. 2022</p>
-            </div>
+  return (
+    <div className="Footer">
+      <div className="Footer__links">
+        <h3 className="Footer__title">Seguinos!</h3>
+        <div className="Footer__social">
+          <a href="https://www.instagram.com/confort.lifeok/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://www.facebook.com/confortlifeok/">
+            <FontAwesomeIcon icon={faSquareFacebook} />
+          </a>
+          <a href="https://www.instagram.com/confort.lifeok/">
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
         </div>
-    )
+      </div>
+      <div className="Footer__links">
+        <h3 className="Footer__title">Dirección</h3>
+        <p>Padilla 825, C1414 CABA</p>
+      </div>
+      <div className="Footer__copyright">
+        <p>
+          Producido por Federico Walovnik. Buenos Aires,
+          Argentina. 2023
+        </p>
+      </div>
+    </div>
+  )
 }
 
-export default Footer;
+export default Footer
