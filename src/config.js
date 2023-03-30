@@ -1,6 +1,6 @@
 const config = {
   url: 'https://confort-life-server.herokuapp.com',
-  showPrices: false,
+  showPrices: true,
   allowPayments: false
 }
 
