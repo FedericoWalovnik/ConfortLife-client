@@ -91,7 +91,6 @@ const Checkout = () => {
     if (cartList.length === 0) {
       navigate('/')
     } else {
-      console.log('createPreference')
       createPreference()
     }
   }, [])

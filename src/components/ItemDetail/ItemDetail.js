@@ -35,15 +35,19 @@ const ItemDetail = ({ details, loading }) => {
       {!loading ? (
         <div className="ItemDetail">
           <div className="ItemDetail__gallery">
-            {/* {
-                                details.images.map((image, i) => {
-                                    return (<img key={i} src={image} alt='' />)
-                                })
-                            } */}
-            <img
+            {details.images.map((image, i) => {
+              return (
+                <img
+                  key={i}
+                  src={image}
+                  alt=""
+                />
+              )
+            })}
+            {/* <img
               src={details.image}
               alt=""
-            />
+            /> */}
           </div>
           <div className="ItemDetail__info">
             <h1 className="ItemDetail__title">

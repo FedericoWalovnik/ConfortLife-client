@@ -7,21 +7,23 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   const cards = [
     {
-      image:
-        'https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_953,c_limit/965f33b5-ce1b-4a23-82b5-0c39c7f603df/nike-just-do-it.jpg',
+      images: [
+        'https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_953,c_limit/965f33b5-ce1b-4a23-82b5-0c39c7f603df/nike-just-do-it.jpg'
+      ],
       title: 'Style Your Air',
       redirectLink: '/product/L9fa4cIwlR1Ju8WP52Be',
       action: 'Shop'
     },
     {
-      image:
-        'https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_738,c_limit/7165e42f-248a-4dca-ae1f-f4c813940e3a/nike-just-do-it.jpg',
+      images: [
+        'https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_738,c_limit/7165e42f-248a-4dca-ae1f-f4c813940e3a/nike-just-do-it.jpg'
+      ],
       title: 'Shoes Always $100 & Under',
       redirectLink: '/product/2',
       action: 'Shop'
     },
     {
-      image: 'images/Arcoiris.jpg',
+      images: ['images/Arcoiris.jpg'],
       title:
         'COLCHONES, SOMMIER y PRODUCTOS PARA EL CONFORT Y EL HOGAR',
       description: '',
@@ -29,7 +31,7 @@ const Home = () => {
       action: 'Comprar'
     },
     {
-      image: 'images/maps.png',
+      images: ['images/maps.png'],
       title: '',
       description: ''
     }
@@ -42,7 +44,7 @@ const Home = () => {
       price: 30,
       category: 'Colchones',
       bestSeller: false,
-      image: 'images/foamNature.jpeg',
+      images: ['images/foamNature.jpeg'],
       stock: 1
     },
     {
@@ -51,7 +53,7 @@ const Home = () => {
       price: 30,
       category: 'Colchones',
       bestSeller: false,
-      image: 'images/colchonResort.jpeg',
+      images: ['images/colchonResort.jpeg'],
       stock: 1
     }
   ]
@@ -63,7 +65,7 @@ const Home = () => {
       price: 30,
       category: 'PillowTop',
       bestSeller: false,
-      image: 'images/PillowTop2.jpeg',
+      images: ['images/PillowTop2.jpeg'],
       stock: 1
     },
     {
@@ -72,7 +74,7 @@ const Home = () => {
       price: 30,
       category: 'AlmohadonesOrtopedicos',
       bestSeller: false,
-      image: 'images/triangulo.jpeg',
+      images: ['images/triangulo.jpeg'],
       stock: 1
     },
     {
@@ -81,7 +83,7 @@ const Home = () => {
       price: 210,
       category: 'Confort',
       bestSeller: false,
-      image: 'images/confort3.jpeg',
+      images: ['images/confort3.jpeg'],
       stock: 1
     }
   ]

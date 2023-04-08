@@ -57,7 +57,7 @@ const Home = () => {
             </div>
           </div>
           <div className="Cart__summary">
-            <h3 className="Cart__summary-title">Summary</h3>
+            <h3 className="Cart__summary-title">Resumen</h3>
             <div className="Cart__total">
               <p className="Cart__total-title">Total</p>
               <p className="Cart__total-number">

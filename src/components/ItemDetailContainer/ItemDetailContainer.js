@@ -32,7 +32,7 @@ const ItemDetailContainer = () => {
 
   return (
     <div className="ItemDetailContainer">
-      {product.image ? (
+      {product.images ? (
         <ItemDetail
           details={{ id: productId, ...product }}
         />
