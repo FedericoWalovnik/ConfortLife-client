@@ -38,9 +38,9 @@ const ItemDetail = ({ details, loading }) => {
             {details.images.map((image, i) => {
               return (
                 <img
-                  key={i}
-                  src={image}
-                  alt=""
+                  key={image.id}
+                  src={image.url}
+                  alt={image.name}
                 />
               )
             })}

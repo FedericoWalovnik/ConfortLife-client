@@ -17,7 +17,7 @@ const SimpleCard = ({ props }) => {
     <div className="SimpleCard">
       <img
         className="SimpleCard__image"
-        src={images[0]}
+        src={images[0].url}
         alt={title}
       />
       <div className="SimpleCard__info">

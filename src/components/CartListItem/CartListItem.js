@@ -21,7 +21,7 @@ const CartListItem = ({ item }) => {
       <div className="CartItem">
         <img
           className="CartItem__image"
-          src={item.images[0]}
+          src={item.images[0].url}
           alt={item.title}
         />
         <div className="CartItem__info">

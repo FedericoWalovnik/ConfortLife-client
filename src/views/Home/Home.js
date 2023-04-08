@@ -7,23 +7,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   const cards = [
     {
-      images: [
-        'https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_953,c_limit/965f33b5-ce1b-4a23-82b5-0c39c7f603df/nike-just-do-it.jpg'
-      ],
-      title: 'Style Your Air',
-      redirectLink: '/product/L9fa4cIwlR1Ju8WP52Be',
-      action: 'Shop'
-    },
-    {
-      images: [
-        'https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_738,c_limit/7165e42f-248a-4dca-ae1f-f4c813940e3a/nike-just-do-it.jpg'
-      ],
-      title: 'Shoes Always $100 & Under',
-      redirectLink: '/product/2',
-      action: 'Shop'
-    },
-    {
-      images: ['images/Arcoiris.jpg'],
+      images: [{ url: 'images/Arcoiris.jpg' }],
       title:
         'COLCHONES, SOMMIER y PRODUCTOS PARA EL CONFORT Y EL HOGAR',
       description: '',
@@ -31,7 +15,7 @@ const Home = () => {
       action: 'Comprar'
     },
     {
-      images: ['images/maps.png'],
+      images: [{ url: 'images/maps.png' }],
       title: '',
       description: ''
     }
@@ -44,7 +28,7 @@ const Home = () => {
       price: 30,
       category: 'Colchones',
       bestSeller: false,
-      images: ['images/foamNature.jpeg'],
+      images: [{ url: 'images/foamNature.jpeg' }],
       stock: 1
     },
     {
@@ -53,7 +37,7 @@ const Home = () => {
       price: 30,
       category: 'Colchones',
       bestSeller: false,
-      images: ['images/colchonResort.jpeg'],
+      images: [{ url: 'images/colchonResort.jpeg' }],
       stock: 1
     }
   ]
@@ -65,7 +49,7 @@ const Home = () => {
       price: 30,
       category: 'PillowTop',
       bestSeller: false,
-      images: ['images/PillowTop2.jpeg'],
+      images: [{ url: 'images/PillowTop2.jpeg' }],
       stock: 1
     },
     {
@@ -74,7 +58,7 @@ const Home = () => {
       price: 30,
       category: 'AlmohadonesOrtopedicos',
       bestSeller: false,
-      images: ['images/triangulo.jpeg'],
+      images: [{ url: 'images/triangulo.jpeg' }],
       stock: 1
     },
     {
@@ -83,7 +67,7 @@ const Home = () => {
       price: 210,
       category: 'Confort',
       bestSeller: false,
-      images: ['images/confort3.jpeg'],
+      images: [{ url: 'images/confort3.jpeg' }],
       stock: 1
     }
   ]
@@ -93,7 +77,7 @@ const Home = () => {
       <div className="Home__section">
         <SimpleCard
           className="Home__card"
-          props={cards[2]}
+          props={cards[0]}
         />
       </div>
       <div className="Home__wpp-button">
@@ -216,7 +200,7 @@ const Home = () => {
         </h2>
         <SimpleCard
           className="Home__card"
-          props={cards[3]}
+          props={cards[1]}
         />
       </div>
     </div>

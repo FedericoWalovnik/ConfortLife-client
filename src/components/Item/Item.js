@@ -12,7 +12,7 @@ const Item = ({ item, loading }) => {
           <div
             className="Item__image-container"
             style={{
-              backgroundImage: `url(${item.images[0]})`
+              backgroundImage: `url(${item.images[0].url})`
             }}
           >
             {/* <img
