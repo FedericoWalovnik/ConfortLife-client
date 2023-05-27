@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.WhatsappButton {
+    position: fixed;
+    bottom: 30px;
+    right: $side-margin;
+    z-index: 100;
+    background-color: #25d366;
+    border-radius: 100%;
+
+    img {
+        margin: 1.4rem;
+        height: 48px;
+        width: 48px;
+        fill: #fff;
+    }
+}
