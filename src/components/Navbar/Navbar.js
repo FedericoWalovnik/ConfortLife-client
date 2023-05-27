@@ -34,7 +34,7 @@ const Navbar = () => {
           <Dropdown.Toggle id="dropdown-basic">Colchones</Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">
+            <Dropdown.Item>
               <Link
                 to={'/category/Colchones'}
                 className="navbar__subcategory"
@@ -57,7 +57,7 @@ const Navbar = () => {
                 to={'/category/ColchonesResortes'}
                 className="navbar__subcategory"
               >
-                Colchones Resortes{' '}
+                Colchones Resortes
               </Link>
             </Dropdown.Item>
 
