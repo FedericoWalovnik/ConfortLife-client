@@ -4,6 +4,7 @@ import CartWidget from './CartWidget/CartWidget'
 // import TextField from '@mui/material/TextField';
 // import InputAdornment from '@mui/material/InputAdornment';
 import { useCartContext } from '../../context/CartContext'
+import Dropdown from 'react-bootstrap/Dropdown'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,14 +21,56 @@ const Navbar = () => {
         </h1>
       </div>
       <ul className="navbar__categories">
-        <Link
+        {/* <Link
           to={'/category/Colchones'}
           className="navbar__category"
         >
           <li tabIndex="0">
             <p>Colchones</p>
           </li>
-        </Link>
+        </Link> */}
+
+        <Dropdown size="lg">
+          <Dropdown.Toggle id="dropdown-basic">Colchones</Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item href="#/action-1">
+              <Link
+                to={'/category/Colchones'}
+                className="navbar__subcategory"
+              >
+                Todos
+              </Link>
+            </Dropdown.Item>
+
+            <Dropdown.Item>
+              <Link
+                to={'/category/ColchonesEspuma'}
+                className="navbar__subcategory"
+              >
+                Colchones Espuma
+              </Link>
+            </Dropdown.Item>
+
+            <Dropdown.Item>
+              <Link
+                to={'/category/ColchonesResortes'}
+                className="navbar__subcategory"
+              >
+                Colchones Resortes{' '}
+              </Link>
+            </Dropdown.Item>
+
+            <Dropdown.Item>
+              <Link
+                to={'/category/Sommiers'}
+                className="navbar__subcategory"
+              >
+                Sommiers
+              </Link>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
         <Link
           to={'/category/PillowTop'}
           className="navbar__category"
@@ -66,6 +109,14 @@ const Navbar = () => {
         >
           <li tabIndex="0">
             <p>Confort</p>
+          </li>
+        </Link>
+        <Link
+          to={'/category/Accesorios'}
+          className="navbar__category"
+        >
+          <li tabIndex="0">
+            <p>Accesorios</p>
           </li>
         </Link>
       </ul>
